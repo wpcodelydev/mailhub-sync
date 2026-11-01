@@ -160,3 +160,8 @@ The application does not seem to like being debugged in `Debug` mode. You need
 to use the `Release` configuration. This seems to be because there's a "Debug
 Heap" that is enabled in Debug configurations, and memory allocated by libetpan
 and de-allocated in mailcore2 isn't reference tracked properly.
+
+
+## MailHub fork
+
+This repository is a private fork of [Mailspring-Sync](https://github.com/Foundry376/Mailspring-Sync) by Foundry 376, used as the sync engine of MailHub. It is licensed under the GNU GPL v3 (see LICENSE.md). All original copyright notices are kept. Changes in this fork: the executable-path branding check in MailSync/main.cpp was removed, and the S3 deploy step was removed from the Windows build workflow.
